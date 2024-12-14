@@ -1,0 +1,12 @@
+.content-disclosure {
+  --r-heading-text-transform: none;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-disclosure__button {
+  width: 10rem;
+  margin: 0 auto;
+}

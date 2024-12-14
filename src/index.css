@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  height: 100%;
+}
+
+.highlight {
+  color: hsl(195, 88%, 70%);
+}
+
+.code-snippet {
+  background: hsl(195, 88%, 20%);
+  color: hsl(195, 88%, 70%);
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  font-size: smaller;
+}
+
+.btn {
+  background-color: hsl(195, 88%, 70%);
+  color: hsl(195, 88%, 20%);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.font-small {
+  font-size: small !important;
+}
+
+.personal-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.personal-link svg {
+  width: var(--r-main-font-size);
+  height: var(--r-main-font-size);
+  color: inherit;
+}
+
+.column-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.reveal-viewport {
+  background-image: url(../public/logo-madisoft.png);
+  background-repeat: no-repeat;
+  background-position: 3% 96%;
+  background-size: 5%;
+}
