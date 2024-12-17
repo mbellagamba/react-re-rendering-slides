@@ -7,6 +7,7 @@ export default function Add3Quiz() {
     <>
       <h1>{number}</h1>
       <button
+        style={{ fontSize: '1.5rem' }}
         onClick={() => {
           setNumber(number + 1);
           setNumber(number + 1);

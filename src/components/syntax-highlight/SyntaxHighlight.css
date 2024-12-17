@@ -1,3 +1,8 @@
 .reveal pre code.full-screen {
   max-height: 600px;
 }
+
+.reveal pre code {
+  scrollbar-width: thin;
+  scrollbar-color: #a5a6a7 #272935;
+}
