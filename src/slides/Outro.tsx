@@ -4,6 +4,16 @@ import me from '../assets/me.jpeg';
 const Outro = () => (
   <>
     <section>
+      <h2>Strategie per ottimizzare il re-render</h2>
+      <ol>
+        <li>Components composition</li>
+        <li>Uncontrolled forms</li>
+        <li>Split large context</li>
+        <li>Memoization</li>
+        <li>React Compiler (?)</li>
+      </ol>
+    </section>
+    <section>
       <TwoColumnsLayout>
         <div className="column-centered">
           <h2>Grazie!</h2>
@@ -72,8 +82,16 @@ const Outro = () => (
           </p>
         </div>
         <div className="column-centered">
-          <img src={me} alt="Mirco Bellagamba" />
-          <p>Software Engineer @ Madisoft</p>
+          <img
+            src={me}
+            alt="Mirco Bellagamba"
+            style={{ borderRadius: '10%' }}
+          />
+          <p>
+            Mirco Bellagamba
+            <br />
+            Software Engineer @ Madisoft
+          </p>
         </div>
       </TwoColumnsLayout>
     </section>

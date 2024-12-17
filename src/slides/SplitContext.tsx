@@ -15,7 +15,10 @@ import {
 
 const SplitContext = () => (
   <>
-    <section>
+    <section data-auto-animate>
+      <h2>Split large context</h2>
+    </section>
+    <section data-auto-animate>
       <h2>Split large context</h2>
       <p>
         React Context offre un modo integrato per condividere lo stato tra i
@@ -23,10 +26,10 @@ const SplitContext = () => (
         di passare le props manualmente.
       </p>
     </section>
-    <section>
-      <h2>Potenziali problemi in applicazioni</h2>
+    <section data-auto-animate>
+      <h2>Split large context</h2>
       <p>
-        La facilità di uso del <code className="code-snippet">Context</code> è
+        La comodità di uso del <code className="code-snippet">Context</code> è
         anche il suo più grande problema.
       </p>
       <p>

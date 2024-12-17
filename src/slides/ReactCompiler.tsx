@@ -125,32 +125,32 @@ const ReactCompiler = () => (
           una migliore prestazione di rendering?
         </li>
         <li>
-          <strong className="highlight">Esperienza dello sviluppatore</strong>{' '}
-          &ndash; il compilatore ti aiuta a scrivere meglio in React? È facile
-          fare debug quando qualcosa va storto?
+          <strong className="highlight">Developer Experience</strong> &ndash; il
+          compilatore ti aiuta a scrivere meglio in React? È facile fare debug
+          quando qualcosa va storto?
         </li>
       </ul>
       <aside className="notes">
         <ul>
-          <li className="fragment">
+          <li>
             <strong className="highlight">Correttezza</strong> &ndash; il
             compilatore compila correttamente l&apos;applicazione e ne preserva
             il comportamento originale? L&apos;app compilata è priva di loop
             infiniti inaspettati e/o di esecuzioni eccessive di useEffect?
           </li>
-          <li className="fragment">
+          <li>
             <strong className="highlight">Prestazioni</strong> &ndash; il
             compilatore aumenta il livello di prestazioni per tutti i tipi di
             app React, da quelle completamente statiche a quelle completamente
             dinamiche? Come si bilancia l&apos;aumento delle dimensioni del
             bundle con una migliore prestazione di rendering?
           </li>
-          <li className="fragment">
-            <strong className="highlight">Esperienza dello sviluppatore</strong>{' '}
-            &ndash; il compilatore ti aiuta a scrivere meglio in React? I
-            messaggi di errore/avvisi sono comprensibili? È facile fare debug
-            quando qualcosa va storto? Permette di rimuovere manualmente useMemo
-            e useCallback? React diventa più semplice da usare e capire con il
+          <li>
+            <strong className="highlight">Developer Experience</strong> &ndash;
+            il compilatore ti aiuta a scrivere meglio in React? I messaggi di
+            errore/avvisi sono comprensibili? È facile fare debug quando
+            qualcosa va storto? Permette di rimuovere manualmente useMemo e
+            useCallback? React diventa più semplice da usare e capire con il
             compilatore abilitato?
           </li>
         </ul>

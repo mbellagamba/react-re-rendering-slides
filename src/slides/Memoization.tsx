@@ -10,7 +10,10 @@ import {
 
 const Memoization = () => (
   <>
-    <section>
+    <section data-auto-animate>
+      <h2>Memoization</h2>
+    </section>
+    <section data-auto-animate>
       <h2>Memoization</h2>
       <q>
         La memoizzazione è una tecnica di programmazione che consiste nel

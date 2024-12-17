@@ -14,10 +14,14 @@ const Intro = () => (
       </aside>
     </section>
     <section>
-      <h2>Perché avviene un re-render?</h2>
+      <h2>
+        Perché avviene
+        <br />
+        un re-render?
+      </h2>
     </section>
     <section>
-      <h2>State updates</h2>
+      <h2>Aggiornamento di stato</h2>
     </section>
     <section>
       <h2>view = f(state)</h2>
@@ -52,7 +56,13 @@ const Intro = () => (
         <div>
           <h2>Quiz</h2>
           <p>Che valore si visualizza quando si clicca &quot;+3&quot;?</p>
-          <SyntaxHighlight language="typescript">{QUIZ_CODE}</SyntaxHighlight>
+          <SyntaxHighlight
+            language="typescript"
+            className="font-small"
+            lineNumbers
+          >
+            {QUIZ_CODE}
+          </SyntaxHighlight>
         </div>
         <div className="column-centered">
           <Add3Quiz />
@@ -61,7 +71,7 @@ const Intro = () => (
     </section>
 
     <section>
-      <h2>Perché React esegue il re-render di un componente?</h2>
+      <h2>Quali cause provocano il re-render di un componente?</h2>
       <ul>
         <li className="fragment">Aggiornamento di stato del componente</li>
         <li className="fragment">Re-render del parent component</li>
