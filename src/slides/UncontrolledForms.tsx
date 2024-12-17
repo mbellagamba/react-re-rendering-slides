@@ -2,7 +2,10 @@ import { ContentDisclosure } from '../components/content-disclosure/ContentDiscl
 import { SyntaxHighlight } from '../components/syntax-highlight/SyntaxHighlight';
 import TodoApp5 from '../examples/todoapp-5/todoapp5';
 import { ADD_TASK_FORM } from './data/composition-code';
-import { UNCONTROLLED_ADD_TASK_FORM } from './data/uncontrolled-forms';
+import {
+  REACT_19_ADD_TASK_FORM,
+  UNCONTROLLED_ADD_TASK_FORM,
+} from './data/uncontrolled-forms';
 
 const UncontrolledForms = () => (
   <>
@@ -85,6 +88,12 @@ const UncontrolledForms = () => (
         fullScreen
       >
         {UNCONTROLLED_ADD_TASK_FORM}
+      </SyntaxHighlight>
+    </section>
+    <section>
+      <span>AddTaskForm.tsx</span>
+      <SyntaxHighlight language="typescript" lineNumbers="6-8,11" fullScreen>
+        {REACT_19_ADD_TASK_FORM}
       </SyntaxHighlight>
     </section>
     <section>
