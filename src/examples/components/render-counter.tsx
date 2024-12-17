@@ -3,7 +3,6 @@ import * as React from 'react';
 type Props = React.PropsWithChildren<{ title: string; color: string }>;
 
 export function RenderCounter({ color, children, title }: Props) {
-  console.log('RenderCounter', title);
   const count = useRenderCountInStrictMode();
   const textColor = getContrastColor(color);
   return (
@@ -20,15 +19,18 @@ export function RenderCounter({ color, children, title }: Props) {
 }
 
 function useRenderCountInStrictMode() {
-  const countRef = React.useRef(-1);
+  const countRef = React.useRef(0);
   countRef.current += 1;
-  // do not count double rendering due to strict mode
-  return Math.floor(countRef.current / 2) + 1;
+  // @ts-expect-error `process.env` is injected by RsPack
+  if (process.env.NODE_ENV === 'development') {
+    // do not count double rendering due to strict mode
+    return Math.floor(countRef.current / 2);
+  }
+  return countRef.current;
 }
 
 function getContrastColor(hexColor: string) {
   // Get black or white depending on the background color
-  // To get a color contrast greater than 4.5 (WCAG AA), we use 128 as a threshold
   const threshold = 128;
   const r = parseInt(hexColor.substring(1, 2), 16);
   const g = parseInt(hexColor.substring(3, 2), 16);
