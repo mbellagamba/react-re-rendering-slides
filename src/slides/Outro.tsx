@@ -79,6 +79,14 @@ const Outro = () => (
               </svg>
               mirco-bellagamba
             </a>
+            <br />
+            <a
+              href="https://rerenderingslides.mircobellagamba.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <small>https://rerenderingslides.mircobellagamba.com</small>
+            </a>
           </p>
         </div>
         <div className="column-centered">
