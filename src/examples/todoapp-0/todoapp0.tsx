@@ -24,7 +24,7 @@ function TodoApp0() {
     setInputValue('');
   };
 
-  const onToogleTask = (taskId: number) => {
+  const onToggleTask = (taskId: number) => {
     setTasks((prevValues) =>
       prevValues.map((currentTask) =>
         currentTask.id === taskId
@@ -82,7 +82,7 @@ function TodoApp0() {
                     name="done"
                     type="checkbox"
                     checked={task.completed}
-                    onChange={() => onToogleTask(task.id)}
+                    onChange={() => onToggleTask(task.id)}
                   />
                   {task.text}
                 </label>

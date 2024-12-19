@@ -57,7 +57,7 @@ export function TasksView() {
     ]);
   }, []);
 
-  const onToogleTask = useCallback((taskId: number) => {
+  const onToggleTask = useCallback((taskId: number) => {
     setTasks((prevValues) =>
       prevValues.map((currentTask) =>
         currentTask.id === taskId
@@ -71,7 +71,7 @@ export function TasksView() {
       <AddTaskForm onSubmit={onAddTask} />
       <ul className="task-list">
         {tasks.map((task) => (
-          <TaskItem key={task.id} task={task} onToggleTask={onToogleTask} />
+          <TaskItem key={task.id} task={task} onToggleTask={onToggleTask} />
         ))}
       </ul>
     </RenderCounter>

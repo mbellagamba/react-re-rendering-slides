@@ -140,7 +140,7 @@ import { RenderCounter } from '../components/render-counter';
 export function TasksList() {
   const [state, dispatch] = useAppContext();
   const { tasks } = state;
-  function onToogleTask(taskId: number) {
+  function onToggleTask(taskId: number) {
     dispatch({ type: 'toggleComplete', taskId });
   }
   return (
@@ -158,7 +158,7 @@ export function TasksList() {
                 name="done"
                 type="checkbox"
                 checked={task.completed}
-                onChange={() => onToogleTask(task.id)}
+                onChange={() => onToggleTask(task.id)}
               />
               {task.text}
             </label>

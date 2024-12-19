@@ -77,7 +77,7 @@ function TodoApp() {
     ]);
   };
 
-  const onToogleTask = (taskId: number) => {
+  const onToggleTask = (taskId: number) => {
     setTasks((prevValues) =>
       prevValues.map((currentTask) =>
         currentTask.id === taskId
@@ -121,7 +121,7 @@ function TodoApp() {
                     name="done"
                     type="checkbox"
                     checked={task.completed}
-                    onChange={() => onToogleTask(task.id)}
+                    onChange={() => onToggleTask(task.id)}
                   />
                   {task.text}
                 </label>
@@ -216,7 +216,7 @@ function TodoApp() {
     ]);
   };
 
-  const onToogleTask = (taskId: number) => {
+  const onToggleTask = (taskId: number) => {
     setTasks((prevValues) =>
       prevValues.map((currentTask) =>
         currentTask.id === taskId
@@ -243,7 +243,7 @@ function TodoApp() {
                   name="done"
                   type="checkbox"
                   checked={task.completed}
-                  onChange={() => onToogleTask(task.id)}
+                  onChange={() => onToggleTask(task.id)}
                 />
                 {task.text}
               </label>
@@ -275,7 +275,7 @@ export function TasksView() {
     ]);
   };
 
-  const onToogleTask = (taskId: number) => {
+  const onToggleTask = (taskId: number) => {
     setTasks((prevValues) =>
       prevValues.map((currentTask) =>
         currentTask.id === taskId
@@ -300,7 +300,7 @@ export function TasksView() {
                 name="done"
                 type="checkbox"
                 checked={task.completed}
-                onChange={() => onToogleTask(task.id)}
+                onChange={() => onToggleTask(task.id)}
               />
               {task.text}
             </label>
